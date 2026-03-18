@@ -49,8 +49,9 @@ for(var i =0; i <text.length; i++) {
 
 // 문제 1. 1부터 20 사이의 숫자 중 홀수만 출력하세요.
 for (var i = 1; i <= 20; i++){
-    if (i % 2 === 1)
+    if (i % 2 === 1){
         console.log(i);
+    }
 }
 
 // 문제 2. 구구단 중 3단을 출력하세요.
@@ -61,19 +62,35 @@ for (var i = 1; i <= 9; i++){
 // 문제 3. 1부터 100까지의 숫자 중 짝수의 합을 구하세요.
 var sum = 0;
 for (var i = 1; i <= 100; i++){
+    // i = 1 -> 1 % 2 = 1
+    // i = 2 -> 2 % 2 = 0
+    // i = 3 -> 3 % 2 = 1
     if (i % 2 === 0) {
+        // 나머지가 0일 때, 이 안에 것을 실행하겠다
+        // i가 짝수일 때만 이 안의 것이 실행된다
         sum = sum + i;
     }
 }
 console.log(sum);
 
 // 문제 4. var str =" JavaScript" 를 역순으로 출력하세요
-var str = "JavaScript";
+var str = "JavaScript";   // 총 10글자
+
+// J -> str[0]
+// a -> str[1]
+// v -> str[2]
+// .....
+// t -> str[9]
 var result = "";
 for (var i = str.length - 1; i >= 0; i--) {
-    result =result + str[i];
-   console.log (result);
+    // i = 9 -> result = ""  // "" + "t" => "t"
+    // i = 8 -> result = "t" // "t" + "p" => "tp"
+    result = result + str[i]
+   //  result =result + str[i];
+   // console.log (result);
 }
+console.log(result);
+
 
 // 문제 5. 1부터 100까지의 숫자 중 4의 배수가 몇 개인지 구하세요
 var count = 0;
@@ -83,4 +100,21 @@ for (var i = 1; i <= 100; i++) {
     }
 }
 console.log(count);
+
+
+for (var a =1; a <=20; a++){
+    if (a % 2 === 1){
+        console.log(a);
+
+    }
+}
+
+for (var b =1; b <=30; b++) {
+    if (b % 3 === 0) {
+        console.log(b);
+    }
+}
+
+
+
 
