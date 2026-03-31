@@ -49,9 +49,6 @@ var getGrade = (score) => {
     }
 }
 
-
-
-
 function workoutCoach(count) {
     console.log(`총 ${count}번 반복됩니다`);
 
@@ -63,3 +60,5 @@ function workoutCoach(count) {
 }
 workoutCoach( 2);
 workoutCoach("S");
+
+
